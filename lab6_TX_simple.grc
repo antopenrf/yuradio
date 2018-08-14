@@ -101,7 +101,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(8, 232)</value>
+      <value>(368, 52)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -113,11 +113,11 @@
     </param>
     <param>
       <key>id</key>
-      <value>Apl_Signal</value>
+      <value>Amp</value>
     </param>
     <param>
       <key>label</key>
-      <value></value>
+      <value>Amplitude</value>
     </param>
     <param>
       <key>max</key>
@@ -126,6 +126,124 @@
     <param>
       <key>min</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>notebook</key>
+      <value></value>
+    </param>
+    <param>
+      <key>num_steps</key>
+      <value>100</value>
+    </param>
+    <param>
+      <key>style</key>
+      <value>wx.SL_HORIZONTAL</value>
+    </param>
+  </block>
+  <block>
+    <key>variable_slider</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>converver</key>
+      <value>float_converter</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>0.5e6</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(200, 52)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>grid_pos</key>
+      <value></value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>freqBB</value>
+    </param>
+    <param>
+      <key>label</key>
+      <value>Base Band Frequency</value>
+    </param>
+    <param>
+      <key>max</key>
+      <value>10e6</value>
+    </param>
+    <param>
+      <key>min</key>
+      <value>-10e6</value>
+    </param>
+    <param>
+      <key>notebook</key>
+      <value></value>
+    </param>
+    <param>
+      <key>num_steps</key>
+      <value>100</value>
+    </param>
+    <param>
+      <key>style</key>
+      <value>wx.SL_HORIZONTAL</value>
+    </param>
+  </block>
+  <block>
+    <key>variable_slider</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>converver</key>
+      <value>float_converter</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>2450e6</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(584, 44)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>grid_pos</key>
+      <value></value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>freqLO</value>
+    </param>
+    <param>
+      <key>label</key>
+      <value>LO Frequency</value>
+    </param>
+    <param>
+      <key>max</key>
+      <value>2.4625e9</value>
+    </param>
+    <param>
+      <key>min</key>
+      <value>2.4375e9</value>
     </param>
     <param>
       <key>notebook</key>
@@ -152,7 +270,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(8, 160)</value>
+      <value>(8, 100)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -164,14 +282,14 @@
     </param>
     <param>
       <key>value</key>
-      <value>32000</value>
+      <value>10e6</value>
     </param>
   </block>
   <block>
     <key>analog_sig_source_x</key>
     <param>
       <key>amp</key>
-      <value>Apl_Signal</value>
+      <value>Amp</value>
     </param>
     <param>
       <key>alias</key>
@@ -187,15 +305,15 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>freq</key>
-      <value>15e6</value>
+      <value>freqBB</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(360, 184)</value>
+      <value>(200, 212)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -242,11 +360,11 @@
     </param>
     <param>
       <key>bw0</key>
-      <value>0</value>
+      <value>48e6</value>
     </param>
     <param>
       <key>center_freq0</key>
-      <value>15e6</value>
+      <value>uhd.tune_request(freqLO,0)</value>
     </param>
     <param>
       <key>norm_gain0</key>
@@ -890,7 +1008,7 @@
     </param>
     <param>
       <key>dev_addr</key>
-      <value>""</value>
+      <value>"addr=192.168.10.2"</value>
     </param>
     <param>
       <key>dev_args</key>
@@ -902,7 +1020,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(856, 168)</value>
+      <value>(584, 180)</value>
     </param>
     <param>
       <key>_rotation</key>
